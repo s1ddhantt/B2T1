@@ -1,0 +1,84 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <img src="assets/pro logo.jpeg" width="200">
+        <div>
+
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Services <span style="font-size: 14px;">▼</span> </button>
+                    <div class="dropdown-content">
+                        <a>iOS</a>
+                        <a>Android</a>
+                        <a>App Devlopment Services</a>
+                        <a>Software Devlopment</a>
+                        <a>Web Devlopment</a>
+                        <a>Data Science Analytics</a>
+                        <a>AI-ML Devlopment</a>
+                        <a>Blockchain</a>
+
+                    </div>
+                </div>
+                <li><a href="testimonial.html">Testimonial</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Industies <span style="font-size: 14px;">▼</span> </button>
+                    <div class="dropdown-content">
+                        <a>IT</a>
+                        <a>Engineering</a>
+                        <a>On Demand Services</a>
+                        <a>E-Commerce</a>
+                        <a>Education</a>
+                        <a>Digital Marketing</a>
+                        <a>SaaS</a>
+                        <a>News</a>
+                        <a>Game</a>
+
+                    </div>
+                </div>
+                <li><a href="contactus.html">ContactUs</a></li>
+                <li><a href="career.html">Career With US</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </section>
+
+    
+
+    <section id="login-page">
+        <div id="login-section">
+            <h2>Login</h2>
+            
+
+                <div>
+                    <img src="https://cdn.hugeicons.com/icons/user-add-01-stroke-rounded.svg" alt="user-add-01" width="24" height="24" />
+                    <input type="text" id="username" placeholder="Enter ID here..">
+                </div>
+                <div>
+                    <img src="https://cdn.hugeicons.com/icons/eye-stroke-rounded.svg" alt="eye" width="24" height="24" />
+                    <input type="password" id="password" placeholder="Password">
+                </div>
+                <h4 style=" color: blue ; font-weight: bolder; visibility: hidden; " id="label" >*Invalid ID or Password*</h4>
+                <button class="btn1" onclick="validation()">Login</button>
+                <h5>Forgot Password ?</h5>
+                <h4>Dont have an account ? <a href="signup.html"><span style="color: red; cursor: pointer;">Register</span></a></h4>
+
+            
+           
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

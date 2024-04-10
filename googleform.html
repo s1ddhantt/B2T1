@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <style>
+      * {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #ede6f6;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .main {
+        height: 230px;
+        width: 50vw;
+        box-sizing: border-box;
+        background-color: white;
+        border-top: 12px solid #663ab5;
+        border-radius: 10px;
+        margin: 13px;
+        margin-bottom: 0;
+        padding: 10px;
+        padding-left: 30px;
+        font-size: 13px;
+      }
+      .main h1 {
+        font-size: 25px;
+      }
+      .section {
+        background-color: white;
+        box-sizing: border-box;
+        height: 150px;
+        width: 50vw;
+        margin: 13px;
+        padding: 10px;
+        padding-left: 30px;
+        margin-bottom: 0;
+        border-radius: 10px;
+      }
+      input[type="text"],
+      input[type="email"] {
+        border: none;
+        border-bottom: 1px solid black;
+        width: 90%;
+        padding: 5px;
+      }
+      .submit {
+        width: 50vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+      }
+      button {
+        margin: 13px;
+        margin-left: 0;
+        margin-bottom: 0;
+        padding: 8px 19px;
+        border-radius: 3px;
+        background-color: #663ab5;
+        border: none;
+        color: white;
+      }
+      button:hover {
+        background-color: #452286;
+        transition: ease-in 200ms;
+      }
+      .rule {
+        width: 50vw;
+        margin-top: 15px;
+        font-size: 13px;
+        color: grey;
+      }
+      .policy {
+        font-size: 14px;
+        color: grey;
+      }
+      .policy a {
+        text-decoration: none;
+        color: grey;
+        text-decoration: underline;
+      }
+      img {
+        margin-top: 13px;
+        height: 200px;
+        width: 50vw;
+        object-fit: fill;
+        object-position: center;
+        border-radius: 10px;
+      }
+
+      .Google {
+        text-align: center;
+      }
+      @media only screen and (max-width: 1000px){
+        img, .main, .section, .submit, .rule, .policy, .Google {
+          width: 90vw;
+        }
+        img {
+          height: 125px;
+        }
+        .main {
+          height: 180px;
+          font-size: 12px;
+        }
+        .section{
+          height: 110px;
+          font-size: 12px;
+        }
+
+        .main h1 {
+          font-size: 18px;
+        }
+        .main p,h4 {
+          margin: 10px 0px;
+        }
+        h1 {
+          font-size: 25px;
+        }
+        input[type="text"],
+        input[type="email"] {
+
+          padding: 5;
+        }
+
+        button {
+          padding: 10px 22px;
+          border-radius: 5px;
+        }
+
+        #radio label input{
+            margin-left: 50px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <form action="https://formspree.io/f/mjvnprvn"
+    method="POST">
+     
+      <div class="main">
+        <h1>Registration form </h1>
+        <hr />
+        <p>
+          All the Submissions to this form will be appended into a table as
+          signatures in the style of open letter.
+        </p>
+        <h4 style="color: red;">* Required</h4>
+      </div>
+      <div class="section">
+        <h3>Name <span style="color: red;">*</span></h3>
+        <input type="text" name="name" id="" required />
+      </div>
+      <div class="section">
+        <h3>Email <span style="color: red;">*</span></h3>
+        <input type="email" name="email" id="" required />
+      </div>
+      <div class="section">
+        <h3>Contact No <span style="color: red;">*</span></h3>
+        <input type="text" name="contact" id="" required />
+      </div>
+       <div class="section">
+        <h3>Date Of Birth <span style="color: red;">*</span></h3>
+        <input type="text" name="Date Of Birth" id="" required />
+      </div>
+      <div class="section">
+        <h3>Education <span style="color: red;">*</span></h3>
+        <input type="text" name="education" id="" required />
+      </div>
+      <div class="section">
+        <h3>Passout year <span style="color: red;">*</span></h3>
+        <input type="text" name="Passout year" id="" required />
+      </div>
+      <div class="section">
+        <h3>Branch <span style="color: red;">*</span></h3>
+        <input type="text" name="Branch" id="" required />
+      </div>
+      <div class="section" id="radio">
+        <h3>Position<span style="color: red;">*</span></h3>
+        <label><input type="radio" name="Position" value="Frontend" required> Frontend</label>
+        <label><input type="radio" name="Position" value="Backend" required> Backend</label>
+        <label><input type="radio" name="Position" value="UI&UX Designer" required>UI&UX Designer </label>
+        <label> <input type="radio" name="Position" value="Al&ML Designer" required>Al&ML Designer</label>
+      </div>
+
+      
+
+      <div class="submit">
+        <button>Submit</button>
+      </div>
+      <p class="rule">Never submit passwords through Google Forms</p>
+      <p class="policy">
+        This content is neither created nor endorsed by Google.
+        <a href="#">Report Abuse.</a> <a href="#">Terms of condition.</a>
+        <a href="#">Privacy Policy.</a>
+        <h1 class="Google" style="color: grey; font-weight: 550; width: 50vw;">Google Forms</h1>
+      </p>
+    </form>
+  </body>
+</html>

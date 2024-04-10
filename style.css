@@ -1,0 +1,1997 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 13vh;
+    background-color: white;
+    color: black;
+}
+
+#header img {
+    mix-blend-mode: multiply;
+    margin-left: 5px;
+}
+
+#navbar {
+    display: flex;
+    list-style: none;
+    margin-right: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar li {
+    padding: 25px;
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#navbar li a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: bolder;
+}
+
+#navbar li a.active {
+    color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+}
+
+#close{
+    display: none;
+}
+
+.dropdown .dropbtn{
+    text-decoration: none;
+    color: #000000;
+}
+
+#mobile{
+    display: none;
+}
+
+.dropbtn {
+    color: blue;
+    font-size: 18px;
+    border: none;
+    background-color: transparent;
+    padding: 25px;
+    font-weight: bolder;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #000000;
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: gray;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* POSTER    */
+
+#poster {
+    width: 100%;
+    height: 87vh;
+    background-color: #000000;
+
+}
+
+#poster marquee {
+    color: white;
+    margin-top: 20px;
+}
+
+#poster #postertext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+    width: 37%;
+    height: 82vh;
+}
+
+#poster #postertext h1 {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #008170;
+}
+
+#poster #postertext h5 {
+    font-size: 17px;
+    font-weight: 400;
+    color: red;
+}
+
+#poster #postertext h4 {
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+#poster #postertext button {
+    width: 26%;
+    margin-right: 20px;
+    border-radius: 100px;
+    height: 50px;
+    font-weight: bolder;
+    cursor: pointer;
+    border: 2px solid gray;
+    background-color: transparent;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(10px);
+}   
+
+#poster #postertext button a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#poster #postertext button:hover {
+    background-color: #0acffe;
+    color: #000000;
+    
+    
+}
+
+#poster #postergif {
+    width: 63%;
+    display: flex;
+    position: absolute;
+    top: 20vh;
+    left: 40vw;
+}
+
+
+
+
+
+
+
+
+/*  AFTER POSTER  */
+
+#afterposter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+
+}
+
+#afterposter-text {
+    width: 50%;
+    margin-right: 120px;
+}
+
+#afterposter-text h2 {
+    margin-bottom: 40px;
+    margin-top: 50px;
+    font-weight: bolder;
+}
+
+#afterposter-image {
+    width: 40%;
+    margin-left: 200px;
+}
+
+/* ABOUT SECTION */
+
+#about-sec1 {
+    display: flex;
+    margin-bottom: 100px;
+    background-color: rgb(222, 211, 211);
+    padding: 40px;
+}
+
+#about-sec1-img {
+    width: 40%;
+    margin-left: 120px;
+}
+
+#about-sec1-text {
+    width: 50%;
+    margin-left: 120px;
+    margin-right: 100px;
+   
+}
+
+#about-sec1-text h2 {
+    margin-bottom: 30px;
+}
+
+#about-sec1-text h4 {
+    margin-bottom: 15px;
+}
+
+#about-sec1-text h5 {
+    font-size: 17px;
+}
+
+#about-sec1-text img {
+    border: 1px solid grey;
+
+}
+
+#about-sec1-text p {
+    margin-top: 20px;
+}
+
+#about-sec1-text div {
+    margin-top: 20px;
+}
+
+#about-sec1-text div:nth-child(odd) {
+    display: flex;
+    flex-direction: row;
+}
+
+#about-sec1-text div:nth-child(even) {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+#about-sec1-text div:nth-child(3) {
+    margin-left: 40px;
+}
+
+#about-sec1-text div h6 {
+    margin-top: 8px;
+    font-size: 14px;
+    margin-top: -8px;
+}
+
+#about-sec1 div button {
+    width: 23%;
+    height: 40px;
+    margin-right: 20px;
+
+
+}
+
+#about-sec1 div button:nth-child(1) {
+    background-color: red;
+    font-weight: 500;
+    cursor: pointer;
+    border: 2px solid black;
+    transition: all 0.5s ease-in-out;
+}
+
+#about-sec1 div button a{
+    text-decoration: none;
+    color: #000000;
+}
+
+#about-sec1 div button:nth-child(2) {
+    font-weight: 500;
+    cursor: pointer;
+    border: 2px solid black;
+    transition: all 0.5s ease-in-out;
+}
+
+#about-sec1 div button:hover {
+    background-color: rgb(77, 77, 218);
+    color: whitesmoke;
+}
+
+
+
+/*  SMALL POSTER  */
+
+#smallposter {
+    background-image: url(assets/R.jpeg);
+    height: 40vh;
+    width: 100%;
+    background-size: cover;
+    background-position: 90% top;
+    margin-bottom: 100px;
+
+}
+
+#smallposter div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 120px;
+    margin-left: 100px;
+    height: 40vh;
+    width: 30%;
+    color: whitesmoke;
+
+}
+
+
+
+/*  SERVICES  */
+
+#ourservices {
+    width: 100%;
+    height: 50vh;
+
+}
+
+#ourservices h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: bolder;
+    color: blue;
+    font-size: 40px;
+}
+
+#ourservices div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#ourservices div h4 {
+    border: 3px solid black;
+    width: 20%;
+    height: 70px;
+    margin: 25px;
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+#ourservices div h4:hover {
+    color: whitesmoke;
+    background-color: #008170;
+}
+
+/* SMALL BANNER AND TEXT */
+
+#sm-banner {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background-color: rgb(228, 222, 222);
+    padding-top: 50px;
+}
+
+#sm-banner-text {
+    width: 50%;
+    margin: 0px 100px;
+    position: relative;
+}
+
+#sm-banner-text h3 {
+    font-weight: bolder;
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #0F0F0F;
+}
+
+#sm-banner-text p {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+    
+}
+
+#sm-banner-text div p{
+    
+}
+
+#sm-banner-text button {
+    margin-right: 20px;
+    width: 20%;
+    height: 40px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+#sm-banner-text button:hover {
+    background-color: red;
+}
+
+#sm-banner-image {
+    width: 40%;
+    margin-left: 90px;
+}
+
+/* FEATURES  */
+
+#features h3,
+h6 {
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+#features h6{
+    margin-bottom: 40px;
+}
+
+#features h3 {
+    color: blue;
+    font-weight: bolder;
+    font-size: 32px;
+    
+}
+
+.feature-box {
+    display: flex;
+    margin: 50px;
+    flex-wrap: wrap;
+    width: 100%;
+   
+
+}
+
+.container-box{
+    width: 300px;
+    height: 300px;
+     display: flex;
+     flex-direction: row;
+     perspective: 500px;
+     border-radius: 20px;
+     margin: 30px;
+     
+ }
+
+ 
+ 
+ .card{
+     height: 100%;
+     width: 100%;
+     
+     position: relative;
+     transition: transform 1500ms;
+     transform-style: preserve-3d;
+     perspective: 500px;
+    
+     
+ }
+
+ .card .front img{
+    margin-bottom: 50px;
+ }
+
+ .card .front h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+ }
+ 
+ .container-box:hover > .card{
+     cursor: pointer;
+     transform: rotateY(180deg);
+ }
+ 
+ .front,
+ .back{
+     height: 100%;
+     width: 100%;
+     border-radius: 20px;
+     box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+     position: absolute;
+     backface-visibility: hidden;
+     border: 2px solid rgb(63, 255, 63);
+ }
+ 
+ .front{
+     background-color: white;
+     backdrop-filter: blur(10px);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 15px;
+     background-image: linear-gradient(135deg, #0acffe 10%, #495aff 100%);
+ 
+ }
+ 
+ .back{
+     background-color: black;
+     color: whitesmoke;
+     transform: rotateY(180deg);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 20px;
+     flex-direction: column;
+ }
+
+ .back .h5{
+    font-size: 12px;
+ }
+
+
+
+/* OUR CLIENTS */
+
+
+#ourclients {
+    margin-bottom: 50px;
+}
+
+#ourclients h2 {
+    text-align: center;
+    margin: 30px;
+    font-weight: bolder;
+    color: blue;
+}
+
+#ourclients div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: scroll;
+
+
+}
+
+#ourclients div img {
+
+    margin: 20px;
+    width: 20%;
+    height: 100px;
+    padding: 10px;
+
+}
+
+
+
+
+
+
+/*  FOOTER   */
+
+#footer {
+    display: flex;
+    background-color: rgb(234, 225, 225);
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#footer #footer1 {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+#footer1 p {
+    margin-top: 15px;
+}
+
+.footericons img {
+    margin-right: 12px;
+    margin-top: 20px;
+    border: 1px solid grey;
+    padding: 4px;
+}
+
+#footer2 {
+    width: 20%;
+    margin-left: 100px;
+    margin-top: 200px;
+}
+
+#footer2 h5 {
+    margin-bottom: 20px;
+}
+
+#footer2 ul li {
+    list-style-type: none;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+#footer3 {
+    margin-top: 200px;
+    width: 20%;
+}
+
+#footer4 {
+    width: 30%;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+#footer4 h3 {
+    margin-bottom: 20px;
+}
+
+#footer4 div {
+    display: flex;
+    padding-bottom: 2px;
+    font-size: 14px;
+}
+
+#footer4 div img {
+    margin-right: 10px;
+}
+
+
+#footer4 div div {
+    display: flex;
+    margin-top: 2px;
+}
+
+#footertext {
+    width: 100%;
+    background-color: blue;
+    height: 7vh;
+    font-weight: bolder;
+    color: white;
+    font-size: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#footertext span {
+    color: rgb(244, 72, 72);
+    margin-left: 5px;
+    text-decoration: underline;
+}
+
+
+/*       ABOUT PAGE          */
+
+#about-banner {
+    width: 100%;
+    height: 45vh;
+    background-image: url(assets/about\ banner.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+
+}
+
+#about-banner div {
+    height: 100px;
+    width: 20%;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+
+}
+
+#about-banner div h1 {
+    margin-bottom: 13px;
+    font-size: 44px;
+    font-weight: bolder;
+}
+
+#about-banner div h4 {
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+
+/* ABOUT DETAILS */
+
+#about-details {
+    margin: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+#about-details #about-details-image {
+    width: 50%;
+    margin-top: 200px;
+}
+
+
+
+#about-details #about-details-text {
+    width: 50%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#about-details #about-details-text h2 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+#about-details #about-details-text h1 {
+    font-weight: bolder;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: blue;
+}
+
+#about-details #about-details-text p {
+    margin-bottom: 35px;
+    font-size: 14px;
+}
+
+#about-details #about-details-text div {
+    display: flex;
+    margin-right: 20px;
+
+}
+
+#about-details #about-details-text div div {
+    display: flex;
+    flex-direction: row;
+
+}
+
+#about-details #about-details-text div div img {
+    margin-right: 10px;
+    border: 2px solid black;
+    padding: 2px;
+    background-color: beige;
+}
+
+#about-details #about-details-text div div div {
+    flex-direction: column;
+}
+
+#about-details #about-details-text div div div h5 {
+    font-weight: 300;
+}
+
+#about-details #about-details-text button {
+    margin-top: 40px;
+    width: 30%;
+    height: 45px;
+    background-color: rgb(228, 65, 65);
+    color: white;
+
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+#about-details #about-details-text button:hover {
+    transform: scale(1.1);
+
+    background-color: red;
+}
+
+/*   TESTIMONIALS  */
+
+
+#testimonial-banner {
+    width: 100%;
+    height: 45vh;
+    background-image: url(assets/testimonial\ banner.webp);
+    background-size: cover;
+    background-position: 5% left;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-size: cover;
+
+}
+
+#testimonial-banner div {
+    height: 100px;
+    width: 20%;
+    margin-right: 350px;
+    margin-bottom: 70px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+
+}
+
+#testimonial-banner div h1 {
+    margin-bottom: 13px;
+    font-size: 44px;
+    font-weight: bolder;
+}
+
+#testimonial-banner div h4 {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#clients-message {
+    margin-top: 100px;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+
+
+#clients-message h5 {
+    text-align: center;
+    font-weight: 600;
+    color: red;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#clients-message h2 {
+    font-size: 32px;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 80px;
+}
+
+#clients-message div {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    overflow: scroll;
+}
+
+#clients-message div::-webkit-scrollbar {
+    visibility: hidden;
+
+}
+
+
+#clients-message div div {
+    min-width: 48%;
+    height: 300px;
+    display: block;
+    margin-right: 20px;
+    background-color: rgb(178, 178, 178);
+    padding: 50px;
+    box-shadow: 15px 15px 15px 0px gray;
+    cursor: pointer;
+    overflow: scroll;
+    position: relative;
+}
+
+#clients-message div div:hover {
+    box-shadow: 5px 5px 5px 0 gray;
+}
+
+#clients-message div div h3 {
+    margin-bottom: 7px;
+    font-weight: bolder;
+    font-size: 22px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#clients-message div span {}
+
+#clients-message div div p {
+    width: 100%;
+    margin-top: 30px;
+}
+
+#clients-message div div img {
+    position: absolute;
+    top: 35px;
+    right: 16px;
+}
+
+#review {
+
+    margin-bottom: 100px;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+}
+
+#review #review-write {
+    width: 50%;
+    height: 400px;
+    margin-left: 50px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #0F0F0F;
+    padding: 20px;
+    opacity: 0.9;
+    border-radius: 20px;
+    margin-right: 70px;
+
+}
+
+#review #review-write h3 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#review #review-write input {
+    height: 300px;
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 18px;
+    border: 3px solid blue;
+}
+
+#review #review-write button {
+    width: 20%;
+    text-align: center;
+    height: 40px;
+    border-radius: 100;
+    background-color: rgb(87, 87, 206);
+    font-size: 16px;
+    font-weight: bolder;
+    color: white;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+
+}
+
+#review #review-write button:hover {
+    background-color: blue;
+}
+
+#review #review-image {
+    width: 40%;
+    margin-top: 50px;
+    transition: all 0.4s ease-in-out;
+}
+
+#review #review-image:hover {
+    transform: scale(1.1);
+}
+
+#footer {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+#footer h3{
+    font-size: 20px;
+    text-align: start;
+    color: black;
+    font-weight: bolder;
+}
+
+#footer #footer1 p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+#footer #footer2 {
+    margin-top: 20px;
+}
+
+#footer #footer2 ul {
+    margin-top: 20px;
+}
+
+#footer #footer3 {
+    margin-top: 20px;
+}
+
+#footer #footer3 ul {
+    margin-top: 20px;
+}
+
+#footer #footer4 h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#footer #footer4 div {
+    margin-bottom: 10px;
+}
+
+
+/*  CONTACT US PAGE */
+
+#contact-banner {
+    width: 100%;
+    height: 45vh;
+    background-image: url(assets/contact\ baner.jpeg);
+    background-size: cover;
+    background-position: 5% left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+#contact-banner div {
+    height: 150px;
+    width: 20%;
+    background-color: grey;
+    opacity: 0.7;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 15px;
+
+}
+
+#contact-banner div h1 {
+    margin-bottom: 13px;
+    font-size: 44px;
+    font-weight: bolder;
+}
+
+#contact-banner div h4 {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#contact-details {
+    margin: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 20px;
+}
+
+#contact-details #mobile {
+    width: 25%;
+    display: flex;
+}
+
+
+
+#contact-details #mobile img:hover {
+    scale: 1.1;
+
+}
+
+
+#contact-details #mobile div {
+    margin-left: 30px;
+}
+
+#contact-details #mobile div h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#contact-details #mobile div h3 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#contact-details #address {
+    width: 35%;
+    display: flex;
+    margin-left: 50px;
+}
+
+
+
+
+
+
+#contact-details #address div {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+#contact-details #address div h2 {
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+#contact-details #address div h3 {
+    margin-bottom: 10px;
+}
+
+#contact-details #address div p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#contact-details #address img:hover {
+    scale: 1.1;
+
+}
+
+
+#contact-details #email {
+    display: flex;
+    width: 25%;
+    margin-left: 50px;
+}
+
+#contact-details #email img:hover {
+    scale: 1.1;
+
+}
+
+#contact-details #email div {
+    margin-left: 30px;
+
+}
+
+#contact-details #email div h2 {
+    margin-bottom: 10px;
+}
+
+#contact-details #email div h4 {
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+#getintouch {
+    width: 100%;
+    height: 650px;
+    background-image: url(assets/getintouch\ bg.jpeg);
+    background-size: cover;
+
+}
+
+#getintouch #getintouch-details {
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+    background-color: black;
+    opacity: 0.8;
+    height: 650px;
+}
+
+#getintouch #getintouch-details div {
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+
+}
+
+#getintouch #getintouch-details div h2 {
+    color: whitesmoke;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#getintouch #getintouch-details div input {
+    width: 250px;
+    height: 50px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-size: 14px;
+    border: 2px solid gray;
+}
+
+#getintouch #getintouch-details div textarea {
+    margin-left: 20px;
+}
+
+#getintouch #getintouch-details div button {
+    width: 25%;
+    margin-left: 220px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: rgb(201, 63, 63);
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 16px;
+    color: white;
+    border: transparent;
+    cursor: pointer;
+
+}
+
+#getintouch #getintouch-details div button:hover {
+    background-color: red;
+}
+
+#location-map {
+    width: 100%;
+}
+
+#location-map iframe {
+    width: 100%;
+    height: 80vh;
+}
+
+/* LOGIN PAGE   */
+
+#login-page {
+
+    width: 100%;
+    height: 87vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(assets/login\ bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#login-page #login-section {
+    background-color: transparent;
+    margin: 20px 0 15px;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid rgba(225, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+#login-page #login-section h2 {
+    margin-bottom: 25px;
+    font-size: 36px;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+}
+
+#login-page #login-section div {
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    position: relative;
+
+}
+
+#login-page #login-section div img {
+    position: absolute;
+    left: 53px;
+    top: 4px;
+}
+
+#login-page #login-section input {
+    width: 70%;
+    height: 35px;
+    margin-left: 45px;
+    padding-left: 40px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid black;
+    position: relative;
+    color: white;
+}
+
+#login-page #login-section button {
+    width: 70%;
+    margin-top: 20px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: bolder;
+    border-radius: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#login-page #login-section .btn1 {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    margin-bottom: 15px;
+    border: 2px solid black;
+}
+
+#login-page #login-section .btn1:hover {
+
+    scale: 1.05;
+}
+
+#login-page #login-section h4 {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+#login-page #login-section h5 {
+    color: white;
+    font-weight: bolder;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* CAREER PAGE  */
+
+#apply-now{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0F0F0F;
+}
+
+#apply-now h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 34px;
+    color: #008170;
+}
+
+#apply-now h2:nth-child(1){
+    margin-top: 30px;
+    margin-bottom: 7px;
+}
+
+#apply-now h2:nth-child(2){
+    margin-bottom: 15px;
+}
+
+#apply-now h4{
+    margin-bottom: 50px;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+#apply-section{
+    width: 50%;
+    background-image: linear-gradient(135deg, #E2B0FF 10%, #9F44D3 100%);
+    margin-bottom: 20px;
+    padding: 30px;
+    border: 2px solid gray;
+  
+    
+}
+
+#apply-section h1{
+    margin-bottom: 15px;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 28px;
+}
+
+#apply-section div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ .apply{
+    border-radius: 100px;
+    height: 45px;
+    width: 150px;
+    background-color: rgb(224, 24, 57);
+    color: white;
+    border: 1px solid black;
+    font-weight: bolder;
+    margin-right: 10px;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+}
+
+.apply:hover{
+    border: 3px solid black;
+}
+
+#apply-section #apply-buttons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 15px;
+}
+
+#apply-section p{
+    font-weight: 600;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#apply-section #apply-buttons button span{
+   
+    margin-right: 6px;
+}
+
+#apply-section #apply-buttons button{
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 6px;
+    margin-right: 10px;
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 2px solid black;
+}
+
+#apply-section button a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/*  DASHBOARD PAGE */
+
+#dashboard-navbar{
+    width: 20%;
+    height: 100vh;
+    background-color: rgb(212, 205, 205);
+}
+
+.dashboard-logo{
+    margin: 20px;
+}
+
+#dashboard-navbar ul li{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+  
+    font-size: 18px;
+   padding-left: 15px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#dashboard-navbar ul li:hover{
+    background-color: rgb(28, 138, 241);
+    color: white;
+    font-weight: bolder;
+}
+
+#dashboard-navbar ul li img{
+    margin-right: 15px;
+}
+
+#dashboard-details{
+    width: 80%;
+    height: 100vh;
+    background-color: rgb(188, 181, 181);
+   
+}
+
+#dashboard-emp-details{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    padding: 20px;
+    
+}
+
+#dashboard-emp-details div{
+    border: 2px solid black;
+    width: 200px;
+    height: 100px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#dashboard-emp-details div:hover{
+    background-color: red;
+    box-shadow: 5px 5px rgba(0,0, 0, 0.2);
+}
+
+#dashboard-emp-details div h3{
+    margin-bottom: 10px;
+}
+
+#dashboard-dep-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#dashboard-dep-details div{
+    border: 2px solid black;
+    margin-right: 20px;
+    margin-top: 40px;
+    width: 220px;
+    height: 150px;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    
+    flex-wrap: wrap;
+}
+
+#dashboard-dep-details div:nth-child(1){
+    background-image: linear-gradient(135deg, #0acffe 10%, #495aff 100%);
+}
+
+#dashboard-dep-details div:nth-child(2){
+    background-image: linear-gradient(135deg, #EEAD92 10%, #6018DC 100%);
+}
+
+#dashboard-dep-details div:nth-child(3){
+    background-image: linear-gradient(135deg, #FFDB01 10%, #0E197D 100%);
+}
+
+#dashboard-dep-details div:nth-child(4){
+    background-image: linear-gradient(135deg, #81FBB8 10%, #28C76F 100%);
+}
+
+#dashboard-dep-details div:nth-child(5){
+    background-image: linear-gradient(135deg, #cc208e 10%, #6713d2 100%);
+}
+
+
+
+#dashboard-dep-details div img{
+    margin-bottom: 10px;
+    margin-left: 3px;
+}
+
+#dashboard-dep-details div h3{
+    margin-bottom: 5px;
+}
+
+#dashboard-dep-details div h4{
+    margin-bottom: 5px;
+}
+
+#emp-table{
+    margin: 40px;
+    border: 2px solid black;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #dddddd;
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: rgb(200, 199, 199);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*   FOR TABLET  */
+
+@media (max-width:799px){
+
+    #header{
+        height: 10vh;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 80px 0 0 10px;
+        font-weight: bolder;
+        font-size: 22px;
+        height: 100vh;
+        width: 300px;
+        background-color: white;
+        color: black;
+       position: fixed;
+       top: 0;
+       right: -300px;
+       box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+       transition: 0.3s;
+       z-index: 999;
+    }
+
+    #navbar.active{
+        right: 0px;
+        
+    }
+
+    #bar.active{
+        z-index: 0;
+    }
+
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 25px;
+    }
+
+    #mobile{
+        display: flex;
+    }
+
+    #poster{
+        background-image: url(assets/gif2.gif);
+        background-repeat: no-repeat;
+        
+    }
+    
+    #poster #postertext{
+       
+        justify-content: center;
+        width: 100%;
+        height: 90vh;
+        padding: 20px;
+        margin-left: 10px;
+        margin-top: 190px;
+    }
+    
+    #poster #postertext h5{
+        font-size: 18px;
+        color: white;
+    }
+    
+    #poster #postergif{
+        display: none;
+    }
+    
+    #afterposter{
+        flex-direction: column-reverse;
+       
+    }
+    
+    #afterposter #afterposter-text{
+        width: 100%;
+        margin-right: 0px;
+    }
+    
+    #afterposter #afterposter-text h2{
+        font-size: 34px;
+        margin-bottom: 20px;
+    }
+    
+    #afterposter #afterposter-text p{
+        font-weight: 600;
+        font-size: 20px;
+    }
+    
+    #afterposter #afterposter-picture{
+       width: 100%;
+    }
+    
+    #about-sec1{
+        flex-direction: column;
+    }
+    
+    #about-sec1-img{
+        width: 600px;
+        margin-bottom: 20px;
+    }
+    
+    #about-sec1-text{
+        width: 100%;
+        margin: 50px;
+        padding: 30px;
+    }
+    
+    #about-sec1-text h4{
+        margin-bottom: 15px;
+        font-weight: 700;
+        font-size: 28px;
+    
+    }
+    
+    #about-sec1-text h5{
+        font-size: 20px;
+    }
+    
+    #about-sec1-text p{
+        font-weight: 600;
+        font-size: 18px;
+    }
+    
+    #ourservices{
+        height: 30vh;
+    }
+    
+    #ourservices div h4{
+        width: 20%;
+        margin: 15px;
+        font-weight: bolder;
+    
+    }
+    
+    #smallposter{
+        margin-top: 10px;
+        height: 25vh;
+        
+    }
+    
+    #smallposter div{
+        margin-top: 30px;
+        width: 55%;
+        height: 25vh;
+        margin-left: 60px;
+       
+    }
+    
+    #sm-banner{
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    #sm-banner #sm-banner-image{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    #sm-banner #sm-banner-text{
+        width: 100%;
+        margin: 0px 50px;
+        padding-right: 80px;
+    }
+    
+    #sm-banner #sm-banner-text p{
+        font-weight: 600;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    
+    #ourclients div img{
+        width: 200px;
+        height: 90px;
+    }
+    
+    #footer #footer1{
+       padding: 0;
+       margin-left: 5px;
+       width: 20%;
+    }
+    
+    #footer1 img:nth-child(1){
+       width: 150px;
+    }
+    
+    #footer2{
+        margin-left: 50px;
+    }
+    
+    #footer4{
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+    
+    
+    /* ABOUT PAGE */
+    
+    #about-banner{
+        height: 25vh;
+    }
+    
+    #about-banner div{
+        width: 35%;
+    }
+    
+    #about-details{
+        flex-direction: column;
+        margin: 50px 100px;
+    }
+    
+    #about-details #about-details-image {
+        margin-top: 40px;
+        
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    #about-details #about-details-text{
+        width: 100%;
+    }
+    
+    /*  TESTIMONIALS  */
+    
+    #testimonial-banner{
+        height: 25vh;
+    }
+    
+    #testimonial-banner div{
+        width: 45%;
+        height: 120px;
+        border: 2px solid gray;
+        background-color: #0F0F0F;
+        backdrop-filter: blur(10px);
+        padding: 10px;
+        color: white;
+        display: none;
+    } 
+    
+    #clients-message div{
+        width: 100%;
+    }
+    
+    #clients-message div div{
+        min-width: 100%;
+    }
+    
+    #review{
+        flex-direction: column;
+        height: 30vh;
+    }
+    
+    #review #review-write {
+        width: 100%;
+        margin: 0;
+        background-color: rgb(7, 114, 253); 
+        border-radius: 0px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    
+    #review #review-write button{
+        height: 50px;
+    }
+    
+    #review #review-write input {
+        width: 100%;
+        
+    }
+    
+    #review #review-image{
+        display: none;
+        
+    }
+    
+    /*  CONTACT US PAGE */
+    
+    #contact-banner {
+        height: 25vh;
+        width: 100%;
+    }
+    
+    #contact-banner div{
+        width: 35%;
+    }
+
+    #contact-details{
+        margin: 15px;
+    }
+
+    
+
+    #contact-details #mobile{
+        width: 30%;
+        margin-right: 30px;
+    }
+    #contact-details #mobile div{
+        margin-left: 10px;
+    }
+
+    #contact-details #address {
+        width: 40%;
+       
+    }
+
+    #contact-details #address{
+        margin-left: 20px;
+    }
+    #contact-details #address div{
+        margin-left: 10px;
+    }
+
+    #contact-details #address div p{
+        font-size: 17px;
+    }
+
+    #contact-details #email{
+        width: 15%;
+        padding: 10px;
+    }
+    #contact-details #email div{
+        margin-left: 10px;
+    }
+
+   
+
+    #getintouch #getintouch-details div{
+        width: 100%;
+        
+    }
+
+    /*Career with us */
+
+    #apply-now{
+       padding: 25px;
+    }
+
+    #apply-section {
+        width: 100%;
+    }
+    
+}
